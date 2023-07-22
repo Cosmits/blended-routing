@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/blended-routing/static/css/main.412fc565.css",
+    "main.js": "/blended-routing/static/js/main.b7734a55.js",
+    "index.html": "/blended-routing/index.html",
+    "main.412fc565.css.map": "/blended-routing/static/css/main.412fc565.css.map",
+    "main.b7734a55.js.map": "/blended-routing/static/js/main.b7734a55.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.412fc565.css",
+    "static/js/main.b7734a55.js"
+  ]
+}
