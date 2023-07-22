@@ -9,37 +9,37 @@ import {
   Accent,
 } from './CountryInfo.styled';
 
-export const CountryInfo = ({country: {
-   flag,
+export const CountryInfo = ({ country: {
+  flag,
   capital,
   country,
   id,
   languages = [],
-  population}
+  population }
 
 }) => {
   return (
     <>
-    <CountryWrapper key = {id}>
-      <Flag>
-        <Image src = {flag}  alt = {country}/>
-      </Flag>
-      <CountryDescription>
-        <CountryCapital>
-          Capital: <Accent>{capital}</Accent>
-        </CountryCapital>
+      <CountryWrapper key={id}>
+        <Flag>
+          <Image src={flag} alt={country} />
+        </Flag>
+        <CountryDescription>
+          <CountryCapital>
+            Capital: <Accent>{capital}</Accent>
+          </CountryCapital>
 
-        <CountryTitle>{country}</CountryTitle>
+          <CountryTitle>{country}</CountryTitle>
 
-        <CountryDetail>
-          Population: <Accent>{population}</Accent>
-        </CountryDetail>
+          <CountryDetail>
+            Population: <Accent>{population}</Accent>
+          </CountryDetail>
 
-        <CountryDetail>
-          Languages: <Accent>{languages.join(', ')}</Accent>
-        </CountryDetail>
-      </CountryDescription>
-    </CountryWrapper>
+          <CountryDetail>
+            Languages: <Accent>{languages.join(', ')}</Accent>
+          </CountryDetail>
+        </CountryDescription>
+      </CountryWrapper>
     </>
   );
 };

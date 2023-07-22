@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { transformCountriesData, transformCountryData } from 'helpers';
+import { fixRegions, removeDuplicates, transformCountriesData, transformCountryData } from 'helpers';
 
 axios.defaults.baseURL = 'https://restcountries.com/v3.1';
 
@@ -22,4 +22,14 @@ export const fetchByRegion = async region => {
   const countries = transformCountriesData(data);
 
   return countries;
+};
+
+//https://restcountries.com/v3.1/independent?status=true&fields=region
+export const fetchListRegion = async () => {
+  const { data } = await axios.get(`/independent?status=true&fields=region`);
+
+  const regions = removeDuplicates(data, 'region');
+  const fullRegions = fixRegions(regions);
+
+  return fullRegions;
 };

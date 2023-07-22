@@ -13,6 +13,8 @@
   пошук країни по регіону на сторінці пошуку країн.
 - [/v3.1/name/{name}](https://restcountries.com/#api-endpoints-v3-name) запит на
   повну інформацію про країну для сторінки країни.
+- [/v3.1/fields=region](https://restcountries.com/v3.1/independent?status=true&fields=region) 
+запит за списком регіонів
 
 ## Маршрути
 
