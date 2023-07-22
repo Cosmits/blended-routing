@@ -9,9 +9,14 @@ const regions = [
   { id: 'oceania', value: 'oceania', name: 'Oceania' },
 ];
 
-export const SearchForm = () => {
+export const SearchForm = ({onSubmit}) => {
+const submit = (event) => {
+  event.preventDefault();
+  onSubmit(event.target.elements.region.value);
+}
+
   return (
-    <SearchFormStyled>
+    <SearchFormStyled onSubmit={submit} >
       <BtnSearch type="submit">
         <FiSearch size="16px" />
       </BtnSearch>

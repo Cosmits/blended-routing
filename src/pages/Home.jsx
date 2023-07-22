@@ -22,10 +22,6 @@ export const Home = () => {
   }
     , [])
 
-
-  console.log("🚀 ~ file: Home.jsx:7 ~ Home ~ europe:", europe)
-
-
   return (
     <Section>
       <Container>
